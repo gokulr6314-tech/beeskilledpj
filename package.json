@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <!-- Link to standard CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Top Header with Clocks and Title -->
+  <header class="header">
+    <div class="time-container">
+      <h2>Live Clock</h2>
+      <div id="clock" class="time-display">00:00:00</div>
+    </div>
+    <div class="title-container">
+      <h1>Nature Gallery</h1>
+      <p>Click on an image to view in fullscreen</p>
+    </div>
+    <div class="time-container">
+      <h2>New Year Countdown</h2>
+      <div id="countdown" class="time-display">0d 0h 0m 0s</div>
+    </div>
+  </header>
+
+  <!-- Gallery Grid Container -->
+  <main class="gallery-container">
+    <div id="galleryGrid" class="gallery-grid">
+      <!-- Images injected via script.js -->
+    </div>
+  </main>
+
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox">
+    <span id="closeBtn" class="close-btn">&times;</span>
+    <button id="prevBtn" class="nav-btn prev-btn">&#10094;</button>
+    <img id="lightboxImg" class="lightbox-img" src="" alt="Expanded image" referrerpolicy="no-referrer">
+    <button id="nextBtn" class="nav-btn next-btn">&#10095;</button>
+  </div>
+
+  <!-- Link to the JavaScript file -->
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
